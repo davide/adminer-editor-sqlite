@@ -32,7 +32,7 @@ function adminer_object() {
         
         function login($login, $password) {
           // validate user submitted credentials
-          return ($login == getenv('DB_EDITOR') && $password == getenv('DB_EDITOR_PASS'));
+          return ($login == getenv('DB_USER') && $password == getenv('DB_PASS'));
         }
 
         function database() {
